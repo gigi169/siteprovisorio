@@ -1,71 +1,174 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Projeto biologia</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <style>
-        #id{
-          display: flex; 
-          align-items: center;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        body{
-          font-family: Geneva, Verdana, sans-serif;
-          font-size: medium;
-          color: rgb(0, 0, 0);
-          background-color:rgb(255, 255, 255)
-        }
+    
+        <style>
         
-        h4{
-          color:#9844b0
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      </style>
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9F9F9;
+            color: #333;
+        }
+
+        
+        section#home {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #B983FF, #8A2BE2);
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        section#home h3, section#home h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        section#home p {
+            margin-top: 20px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #8A2BE2;
+        }
+
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        table {
+            margin: 20px auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #B983FF;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            background-color: #F9F9F9;
+        }
+
+        section#conteudo {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        </style>
   </head>
   <body>
-      <main>
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-              <div class="container-fluid">
-                <img src="./img/logo.png" class="navbar-brand" width="250">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="sobrenos.html">SOBRE NÓS</a>
-                    </li>
+    
+        <main>
+        <div class="container-fluid">
+            <img src="./img/Projeto 01.png" alt="Projeto Biologia">
+            
+            <nav class="navbar navbar-expand-sm justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sobrenos.html">SOBRE NÓS</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="./projeto1.html">PROJETO</a>
+                </li>                 
+             
+                <li class="nav-item">
+                <a class="nav-link" href="./contatos.html">CONTATOS</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </main>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="projeto1.html">PROJETO </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                      <a class="nav-link" href="contatos.html">CONTATOS</a>
-                    </li>
-                  </ul>
-                  
-                <img src="./img/ifpr logo.png" class="navbar-brand" width="100">
-              </div>
-          </nav>
-      </main>   
-      <section id=home>
-        <h3 style="text-align:center;"> MODELOS DIDÁTICOS MULTISSENSORIAIS: </h3>
-        <h4 style="text-align:center;">ENSINO DE BIOLOGIA E A INCLUSÃO DE ALUNOS COM DEFICIÊNCIA VISUAL</h4>
-        <p style="text-align:center;">A inclusão de alunos com deficiência visual no ensino<br> de Biologia apresenta desafios únicos, especialmente <br> considerando a natureza visual desta ciência. 
-          Este <br> projeto propõe a criação de modelos didáticos <br>multissensoriais, 
-          ombinando informações táteis e <br>recursos sonoros, 
-          para proporcionar uma experiência de <br>aprendizagem mais completa e acessível a estes alunos.
+    
+        <section id="home">
+        <h3>MODELOS DIDÁTICOS MULTISSENSORIAIS:</h3>
+        <h4>ENSINO DE BIOLOGIA E A INCLUSÃO DE ALUNOS COM DEFICIÊNCIA VISUAL</h4>
+        <p>
+            A inclusão de alunos com deficiência visual no ensino<br>
+            de Biologia apresenta desafios únicos, especialmente <br>
+            considerando a natureza visual desta ciência. Este <br>
+            projeto propõe a criação de modelos didáticos <br>
+            multissensoriais, combinando informações táteis e <br>
+            recursos sonoros, para proporcionar uma experiência de <br>
+            aprendizagem mais completa e acessível a estes alunos.
         </p>
+        <a href="projeto1.html">Veja mais detalhes</a>
+        </section>
 
-        
-
-     </section>  
+    
+        <section id="conteudo">
+        <h4>Resumo do Projeto</h4>
+        <table>
+            <tr>
+            <th>Objetivo</th>
+            <th>Metodologia</th>
+            <th>Impacto</th>
+            </tr>
+            <tr>
+            <td>Incluir alunos com deficiência visual no ensino de Biologia</td>
+            <td>Desenvolvimento de modelos táteis e sonoros</td>
+            <td>Promover acessibilidade e interesse na área científica</td>
+            </tr>
+        </table>
+        </section>
   </body>
 </html>
