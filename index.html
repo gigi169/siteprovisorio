@@ -111,11 +111,19 @@
             text-align: center;
         }
     
-        #home {
-        display: inline-block;
-        width: 20%;
-        margin-right: 15%;
-        }
+       .conteudo{
+        display: table;
+       }
+
+       .imagens{
+        display: table-cell;
+        float: left;
+       }
+
+       .texto{
+        display: table-cell;
+        float: left;
+       }
 
         </style>
   </head>
@@ -140,19 +148,30 @@
       </main>
     
         <section id="home" >
-        <h3>MODELOS DIDÁTICOS MULTISSENSORIAIS:</h3>
-        <h4>ENSINO DE BIOLOGIA E A INCLUSÃO DE ALUNOS COM DEFICIÊNCIA VISUAL</h4>
-        <p>
-            A inclusão de alunos com deficiência visual no ensino<br>
-            de Biologia apresenta desafios únicos, especialmente <br>
-            considerando a natureza visual desta ciência. Este <br>
-            projeto propõe a criação de modelos didáticos <br>
-            multissensoriais, combinando informações táteis e <br>
-            recursos sonoros, para proporcionar uma experiência de <br>
-            aprendizagem mais completa e acessível a estes alunos.
-        </p>
-        <a href="projeto1.html">Veja mais detalhes</a>
-        <img src="img/celulas.png">
+        <div class="conteudo">
+
+            <div class="texto">
+                <h3>MODELOS DIDÁTICOS MULTISSENSORIAIS:</h3>
+                <h4>ENSINO DE BIOLOGIA E A INCLUSÃO DE ALUNOS COM DEFICIÊNCIA VISUAL</h4>
+            
+                <p>
+                    A inclusão de alunos com deficiência visual no ensino<br>
+                    de Biologia apresenta desafios únicos, especialmente <br>
+                    considerando a natureza visual desta ciência. Este <br>
+                    projeto propõe a criação de modelos didáticos <br>
+                    multissensoriais, combinando informações táteis e <br>
+                    recursos sonoros, para proporcionar uma experiência de <br>
+                    aprendizagem mais completa e acessível a estes alunos.
+                </p>
+                <a href="projeto1.html">Veja mais detalhes</a>
+           </div>
+
+            <div class="imagens">
+                <img src="img/celulas.png">
+
+            </div>
+
+       </div>
         </section>
 
     
